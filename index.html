@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-AOA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>Modrop-Movemos valor</title>
+    <meta name="description" content="Modrop: plataforma de entregas e Marketplace que liga vendedores e clientes em Angola. Entregas rápidas usando carros, motas, autocarros e aviões">
+</head>
+<body>
+ <!--INICIO DO NAVIBAR MODROP-->
+<header>
+
+<nav class="container">
+    <img id="hamburguer" src="assets/img/menubranco.png" alt="menu" title="menu" onclick="abrirmenu()">
+       
+    <div class="logo">
+    <img src="assets/img/logom1.png" alt="Logo modrop" title="Modrop" width="67px">
+    </div>
+
+ <div id="icones">
+    <a href="#"><img src="assets/img/icones/icone-pesquisa.png" alt="icone-pesquisa" width="40px"></a>
+    <a href="#"><img src="assets/img/icones/pessoa-linha2.png" alt="" width="28px" id="pessoa"></a>
+    <a href="#" ><img src="assets/img/icones/icone-carrinho-linhabranc.png" alt="carrinho" width="35px" id="carrinho" ></a>
+ </div>
+
+</nav>
+<!--FIM DO NAVIBAR MODROP-->
+
+<!-- Essa parte esta oculta com um display block-->
+    <ul id="menu">
+    <li><a href="paginas/todos-produto.html">Produtos</a></li>
+    <li><a href="paginas/nossos-vendedores.html">Nossos vendedores</a></li>
+    <li><a href="paginas/rastrear-pedido.html">Rastrear pedido</a></li>
+    <li><a href="paginas/serviços.html">Serviços</a></li>
+    <li><a href="paginas/contactos.html">Contactos</a></li>
+    <li><a href="paginas/sobrenos.html">Sobre Nós</a></li>
+    </ul>
+    <div id="overlay" onclick="abrirmenu()" ></div>
+
+<p class="texto-hero">Compras e entregas <br> rápidas em <strong>Ndalatando</strong>
+<button>Comprar</button> <br>
+<a href="#">Rastrear encomenda</a><p>
+
+
+</header>
+
+<!--Inicio serviços em destaque-->
+<main>
+ <section id="destaque">
+    <h2>Produtos em Destaque</h2>
+
+    <div id="produtos-destaque">
+
+      <!--Inicio produtos em destaque-->
+    <div><img src="assets/img/produtos-destaque/Hamburguer.png" alt="Hamburguer" width="190px">
+    <p>1.200kz <a href="#">Comprar</a></p>
+    </div>
+
+    <div><img src="assets/img/produtos-destaque/buque.png" alt="Buque de flores" width="190px"><p>8.000kz <a href="#">Comprar</a> </p> </div>
+
+    <div><img src="assets/img/produtos-destaque/camisas-destaque.png" alt="camisa casual" width="190px"><p>3.000kz <a href="#">Comprar</a> </p></div>
+
+    <div id="meio"><img src="assets/img/produtos-destaque/Iphone.png" alt="camisa casual" width="190px"><p>300.000kz <a href="#">Comprar</a> </p></div>
+
+
+<div id="tela-grande"><img src="assets/img/produtos-destaque/moda-feminina/bolsa-preta.png" alt="camisa casual" width="190px"><p>6.000kz <a href="#">Comprar</a> </p></div>
+
+<div id="tela-grande"><img src="assets/img/produtos-destaque/moda-masculina/samba-branca.png" alt="camisa casual" width="190px"><p>24.000kz <a href="#">Comprar</a> </p></div>
+
+
+   
+    </div> <!--Fim produtos em destaque-->
+
+
+    <div class="carrossel"> <!--Começo carrossel-->
+    <button class="btn anterior" ><p>«</p></button>
+
+    <img src="assets/img/produtos-destaque/Vans.png" alt="Vans old school" class="slide ativo">
+    <img src="assets/img/produtos-destaque/Buquecarrossel.png" alt="Buque" class="slide">
+    <img src="assets/img/produtos-destaque/Relogio.png" alt="relogio" class="slide">
+    <img src="assets/img/produtos-destaque/camisas.png" alt="camisas" class="slide">
+
+    <button class="btn proximo" ><p>»</p></button>
+                   
+    <!--Bolinhas-->
+    <div class="indicadores">
+    <span class="bolinha ativa"></span>
+    <span class="bolinha"></span>
+    <span class="bolinha"></span>
+    <span class="bolinha"></span>
+    </div>
+
+</div>
+</section>
+
+<section id="rastreamento">
+    <h2> Rastrear encomenda</h2>
+    <div id="rastreio">
+        <input type="text" placeholder="Insira o código" id="holder">
+        <button class="btn1">Rastrear</button>
+    </div>
+</section>
+
+<section id="produtos"> <!--Moda masculina-->
+    <h3>Moda masculina</h3>
+     <div class="moda-masculina"> 
+
+       <a href="paginas/produto.html?id=cam-mas-cinza"><div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 1.png" alt="camisa-cinza"><p>Camiza cinza-3.000kzs</p></div></a>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 2.png" alt="calça jeans azul"><p>8.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 3.png" alt="calça jeans preta"><p>8.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 4.png" alt="Vans preta e branca"><p>14.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/samba-branca.png" alt="Samba branca"><p>14.000kzs</p></div>
+
+      <div><img src="assets/img/produtos-destaque/moda-masculina/samba-preta.png" alt="Samba preta"><p>14.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 5.png" alt="camisa preta"><p>3.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 6.png" alt="camisa branca"><p>3.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-masculina/Prancheta 7.png" alt="camisa social branca"><p>6.000kzs</p></div>
+
+         <div id="ver"><p><a href="paginas/todos-produto.html" id="vermais">Vertudo </a></p></div>
+
+
+     </div>
+
+     <h3>Moda feminina</h3>
+     <div class="moda-masculina"><!--Moda feminina-->
+       <div><img src="assets/img/produtos-destaque/moda-feminina/conjunto feminino1.png" alt="camisa-cinza"><p>15.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/shinelo-mulher.png" alt="calça jeans azul"><p>4.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/vestido.png" alt="calça jeans preta"><p>7.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/chapeus.png" alt="Vans preta e branca"><p>1.500kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/blusa-xadrez.png" alt="Vans preta e branca"><p>3.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/blusa-preta.png" alt="Vans preta e branca"><p>3.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/blusa-branca.png"        alt="Vans preta e branca"><p>3.000kzs</p></div>       
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/bolsa-preta.png" alt="camisa preta"><p>6.000kzs</p></div>
+
+        <div><img src="assets/img/produtos-destaque/moda-feminina/bolsa-azul.png" alt="camisa preta"><p>6.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/calça-jeans-feminina.png" alt="camisa branca"><p>5.000kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/calça feminina1.png" alt="camisa social branca"><p>6.000kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/sandalias-branca.png" alt="camisa social branca"><p>6.000kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/sandalias-preta.png" alt="camisa social branca"><p>6.000kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/cintos-feminino.png" alt="camisa social branca"><p>1.500kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/relogio-feminino.png" alt="camisa social branca"><p>1.500kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/fios femininos.png" alt="camisa social branca"><p>500kz</p></div>
+
+       <div><img src="assets/img/produtos-destaque/moda-feminina/sandalias-cinza.png" alt="camisa social branca"><p>1.500kz</p></div>
+
+     </div>
+
+     <h3>Fast food</h3>
+     <div id="fast-food"><!--Fast food-->
+       
+       <div><img src="assets/img/produtos-destaque/Fast food/gelado-fast food.png" alt="gelado"><p>700kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/Fast food/hamburguer-fast food.png" alt="hamburguer"><p>1.500kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/Fast food/magoga.png" alt="Magoga"><p>1.500kzs</p></div>
+
+     </div>
+
+     <h3>Acessórios</h3>
+     <div class="moda-masculina"><!--Acessorios-->
+       
+       <div><img src="assets/img/produtos-destaque/Acessórios eletricos/auricular.png" alt="auricular"><p>1.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/Acessórios eletricos/bluetooth.png" alt="auricular sem fio"><p>4.000kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/Acessórios eletricos/cabo tipo c.png" alt="Carregador tipo C"><p>2.500kzs</p></div>
+
+       <div><img src="assets/img/produtos-destaque/Acessórios eletricos/carregador android.png" alt="Carregador tipo android"><p>1.500kzs</p></div>
+
+     </div>
+    </main>
+
+<footer>
+  <div id="rodape">  
+          
+     <div style=" width:110px;">
+        <img src="assets/img/logom1.png" alt="logo Modrop" width="40px">
+        <p>Conectando compradores e vendedores.</p>
+     </div>
+
+     <div id="linksrodape">
+        <a href="#hamburguer" target="_top">Início</a>
+        <a href="paginas/todos-produto.html" target="_self">Produtos</a>
+        <a href="paginas/sobrenos.html" target="_self">Sobre Nós</a>
+        <a href="paginas/contactos.html" target="_self">Contacto</a>
+        <a href="paginas/rastrear.html" target="_self" style="margin: auto;" >Rastrear Encomenda</a>
+     </div>
+
+     <div id="redes">
+         <p><a href="#"><img src="assets/img/icones/whatsapp-branco.png" alt="logo-whatapp" width="25px"></a></p>
+        <p>
+        <a href="#"><img src="assets/img/icones/fb-branco.png" alt="logo-facebook" width="25px"></a></p>
+        
+     </div>
+  </div>
+  <p style="text-align: center;">& 2026 Modrop Todos os direitos reservados</p>
+</footer>
+     
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

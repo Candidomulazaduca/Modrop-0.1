@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(css/fontes/Montserrat-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Orbitron-Regular";
+    src: url(fontes/Orbitron-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family:"OpenSans-Regular" ;
+    src: url(fontes/OpenSans-Regular.ttf) format(truetype);
+}
+*{  
+    padding: 0p;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --cor-azul: #0e3d59;
+    --cor-laranja-forte: #d97925;
+    --cor-laranja-meio: #f29a2e;
+    --cor-laranja-fraco: #f2ab27;
+    --cor-cinza-claro:#e7e7e7;
+    --cor-cinza-claro1:#d0d0d0;
+    --cor-cinza-claro2:#b8b8b8;
+    --cor-cinza-claro3:#a0a0a0;
+    --cor-cinza-medio:#c0c0c0;
+    --cor-cinza-medio1:#9c9c9c;
+    --cor-cinza-medio2:#797979;
+    --cor-cinza-escuro:#555555;
+    --cor-cinza-escuro1:#313131;
+}
+
+body, html{
+    max-width: 768px;
+    margin: auto;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}

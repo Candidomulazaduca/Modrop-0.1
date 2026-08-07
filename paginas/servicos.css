@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(css/fontes/Montserrat-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Orbitron-Regular";
+    src: url(fontes/Orbitron-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family:"OpenSans-Regular" ;
+    src: url(fontes/OpenSans-Regular.ttf) format(truetype);
+}
+*{  
+    padding: 0p;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --cor-azul: #0e3d59;
+    --cor-laranja-forte: #d97925;
+    --cor-laranja-meio: #f29a2e;
+    --cor-laranja-fraco: #f2ab27;
+    --cor-cinza-claro:#e7e7e7;
+    --cor-cinza-claro1:#d0d0d0;
+    --cor-cinza-claro2:#b8b8b8;
+    --cor-cinza-claro3:#a0a0a0;
+    --cor-cinza-medio:#c0c0c0;
+    --cor-cinza-medio1:#9c9c9c;
+    --cor-cinza-medio2:#797979;
+    --cor-cinza-escuro:#555555;
+    --cor-cinza-escuro1:#313131;
+}
+
+body{
+    max-width: 768px;
+    margin: auto;
+    background: var(--cor-cinza-escuro1) url(../assets/img/fundo1.jpg) no-repeat center center;
+    background-size: cover;  
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+#menu{
+    position: fixed;
+    top: 45px;
+    left: -200px;
+    margin: 5px;
+    background-color: var(--cor-azul);
+    padding: 15px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.404);
+    transition: .4s;
+    z-index: 1000;
+}
+
+#menu.ativo{
+    left: 0;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: none;
+    z-index: 999;
+}
+
+#overlay.ativo{
+    display: block;
+}
+
+#menu > li > a{
+text-decoration: none;
+color: white;
+font-weight: 400;
+transition: 0.5s;
+line-height: 25px;
+}
+
+#menu > li > a:hover{
+ background-color: #141414;
+ padding: 4px;
+ border-radius: 10px;
+ z-index: 100;
+}
+
+#servicos{
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.404);
+    width: 95%;
+    margin: auto;
+}
+
+
+.card{
+    margin-top: 15px;
+}
+
+h4{
+    font-weight: 600;
+}
+
+/*inicio rodape*/
+footer{
+  background-color: rgb(0, 0, 0); 
+  color:white;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  max-width: 768px; ;
+}
+
+#rodape{
+    
+    font-size: 0.8em;
+    padding: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#rodape > div{
+    padding: 3px;
+}
+
+#redes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 5px;
+   align-items: center;
+}
+
+#linksrodape{
+    width: 190px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#linksrodape > a {
+    padding-right: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+#linksrodape > a:hover{
+    transform: scale(1.2);
+}
+
+
+@media screen and (min-width:768px){
+
+   
+}

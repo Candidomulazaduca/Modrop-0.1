@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(css/fontes/Montserrat-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Orbitron-Regular";
+    src: url(fontes/Orbitron-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family:"OpenSans-Regular" ;
+    src: url(fontes/OpenSans-Regular.ttf) format(truetype);
+}
+*{  
+    padding: 0p;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --cor-azul: #0e3d59;
+    --cor-laranja-forte: #d97925;
+    --cor-laranja-meio: #f29a2e;
+    --cor-laranja-fraco: #f2ab27;
+    --cor-cinza-claro:#e7e7e7;
+    --cor-cinza-claro1:#d0d0d0;
+    --cor-cinza-claro2:#b8b8b8;
+    --cor-cinza-claro3:#a0a0a0;
+    --cor-cinza-medio:#c0c0c0;
+    --cor-cinza-medio1:#9c9c9c;
+    --cor-cinza-medio2:#797979;
+    --cor-cinza-escuro:#555555;
+    --cor-cinza-escuro1:#313131;
+
+}
+
+body, html{
+    max-width: 768px;
+    margin: auto;
+    background-color: var(--cor-cinza-claro);
+}
+
+header{
+   background-color: black;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 4px;
+}
+
+#logo{
+    padding-top: 5px;
+}
+
+#menu{
+    position: fixed;
+    left: -200px;
+    margin: 5px;
+    background-color: var(--cor-azul);
+    padding: 15px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.404);
+    transition: .4s;
+    z-index: 1000;
+}
+
+#menu.ativo{
+    left: 0;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: none;
+    z-index: 999;
+}
+
+#overlay.ativo{
+    display: block;
+}
+
+#menu > li > a{
+text-decoration: none;
+color: white;
+font-weight: 400;
+transition: 0.5s;
+line-height: 25px;
+}
+
+#menu > li > a:hover{
+ background-color: #141414;
+ padding: 4px;
+ border-radius: 10px;
+ z-index: 100;
+}
+
+
+h1{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteiner{
+    height:360px ;
+    background-color: var(--cor-cinza-claro);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    margin-bottom: 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+/*inicio conteudos-diversos*/
+.conteudos-diversos{
+width: 62%;
+padding: 5px;
+text-align: center;
+display: flex;
+flex-flow: row wrap;
+overflow-y: scroll;
+gap: 15px;
+justify-content: space-evenly;
+align-content: flex-start;
+}
+
+.conteudos-diversos > h3{
+   width: 100%; 
+   color: var(--cor-cinza-escuro1);
+}
+
+.imagens-produto > img{
+   width: 130px;  
+   border-radius: 5px;
+}
+
+.imagens-produto > p{
+ font-size: smaller;  
+ font-weight: 500; 
+}
+
+.imagens-produto > p > button{
+  border-radius: 15px;
+  border: 0px solid black;
+  padding: 0px 4px 0px 4px;
+  background-color: var(--cor-laranja-fraco);
+  font-weight: 500; 
+}
+
+/*Fim conteudos-diversos*/
+
+/*inicio conteudos-amostra*/
+.conteudo-amostra{
+width: 38%;
+ padding: 3px;
+ text-align: center;
+}
+
+.imagem-amostra{
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.445);
+    width: 210px;
+}
+
+.titulo-amostra{
+    padding-bottom:5px;
+}
+
+.botao-amostra{
+    border-radius: 5px;
+    border: 0px solid black;
+    background-color: var(--cor-laranja-fraco);
+    font-weight:500;
+}
+/*Fim conteudos-amostra*/
+
+
+
+
+
+
+
