@@ -15,6 +15,19 @@ if(menu.classList.contains("ativo")){
 
 
 
+//Abrir pesquisa
+function abrirpesquisa(){
+    var iconepesquisa = document.querySelector('#icone-pesquisa')
+    var caixapesquisa = document.getElementById('pes')
+    var fecharpesquisa  = document.querySelector('#fecharpesquisa')
+
+    caixapesquisa.classList.toggle("ativo")
+    fecharpesquisa.classList.toggle("ativo")
+   
+}
+
+
+
 //Inicio Carrossel
 // SELECIONA TODOS OS SLIDES
 const slides = document.querySelectorAll('.slide');

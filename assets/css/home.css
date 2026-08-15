@@ -34,9 +34,10 @@
     --cor-cinza-escuro1:#313131;
 }
 
-body, html{
+body{
     max-width: 768px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -45,11 +46,12 @@ height: 470px;
 background-image: url(../img/hero.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-background-position: center left;
+background-position: left left;
 }
 
 nav.container{
 background-color: rgb(0, 0, 0);
+flex-flow: row wrap;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -120,10 +122,35 @@ line-height: 25px;
 #icones > a{
     padding: 3px;
 }
-
-#icones > a > #pessoa {
-  padding-bottom: 6px;
+    
+#pes{
+display: none;
+border-radius: 8px;
+text-align: center;
+border: 0px solid black;
 }
+
+#pes.ativo{
+display: inline-block;
+width: 120px;
+}
+
+#fecharpesquisa{
+    display: none;
+    border-radius: 7px;
+    border: 0px solid black;
+}
+
+#fecharpesquisa.ativo{
+    display: inline-block;
+}
+
+#barradepesquisa{
+position: absolute;
+top: 2%;
+left: 55%;
+}
+
 
 #carrinho{
     padding-bottom: 3px;
@@ -278,6 +305,24 @@ font-size: 2em;
 padding-top: 20px;
 padding-bottom: 10px;
 margin: auto;
+transition: all 0.3s ease;
+}
+
+#rastreamento:target{
+    animation: destacar 4s ease;
+}
+
+@keyframes destacar {
+    0%{
+        box-shadow: 0 0 0 rgba(0,170, 255, 0);
+        }
+        60%{
+            box-shadow: 0 0 30px rgba(0, 170, 255, 0.8);
+        }
+        100%{
+            box-shadow: 0 0 0 rgba(0, 170, 255, 0);
+        }
+    
 }
 
 #rastreamento > h2 {
@@ -358,7 +403,7 @@ text-align: center;
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
-    overflow: hidden;
+    overflow-x:scroll;
     height: 200px;
 }
 
@@ -478,6 +523,35 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
  */
 
+ @media screen and (max-width:550px){
+.texto-hero{
+  font-size: 0.8em;  
+  position: absolute;
+  left: 52%;
+}
+
+#barradepesquisa{
+position: absolute;
+top: 2%;
+left: 53%;
+}
+
+#pes.ativo{
+display: inline-block;
+width: 100px;
+padding: 2px;
+}
+
+.logo{
+    width: 10px;
+    position: absolute;
+    left: 60px;
+}
+
+
+
+ }
+
  @media screen and (min-width:600px) and (max-width: 768px){
   #produtos-destaque > div > img{
     width: 190px;
@@ -487,6 +561,11 @@ Grandes telas: acima de 1200px
     display: none;
   }
 
+#barradepesquisa{
+position: absolute;
+top: 2%;
+left: 60.5%;
+}
 
  }
 
@@ -498,6 +577,12 @@ Grandes telas: acima de 1200px
    #menu.ativo{
     position: absolute;
     left: 0;
+}
+
+#barradepesquisa{
+position: absolute;
+top: 2%;
+left: 68.5%;
 }
 
 

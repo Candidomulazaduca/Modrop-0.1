@@ -19,8 +19,13 @@
     </div>
 
  <div id="icones">
-    <a href="#"><img src="assets/img/icones/icone-pesquisa.png" alt="icone-pesquisa" width="40px"></a>
-    <a href="#"><img src="assets/img/icones/pessoa-linha2.png" alt="" width="28px" id="pessoa"></a>
+
+   <div id="barradepesquisa"><input type="text" name="pes" id="pes" placeholder="pesquisar">
+   <button id="fecharpesquisa" onclick="abrirpesquisa()" >X</butto></div>
+
+    <label for="pes">
+    <img src="assets/img/icones/icone-pesquisa.png" alt="icone-pesquisa" width="40px" onclick="abrirpesquisa()" id="icone-pesquisa"></label>
+    
     <a href="#" ><img src="assets/img/icones/icone-carrinho-linhabranc.png" alt="carrinho" width="35px" id="carrinho" ></a>
  </div>
 
@@ -205,7 +210,7 @@
         <a href="paginas/todos-produto.html" target="_self">Produtos</a>
         <a href="paginas/sobrenos.html" target="_self">Sobre Nós</a>
         <a href="paginas/contactos.html" target="_self">Contacto</a>
-        <a href="paginas/rastrear.html" target="_self" style="margin: auto;" >Rastrear Encomenda</a>
+        <a href="#rastreamento" target="_self" style="margin: auto;" >Rastrear Encomenda</a>
      </div>
 
      <div id="redes">

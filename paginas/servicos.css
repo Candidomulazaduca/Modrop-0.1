@@ -37,7 +37,7 @@
 body{
     max-width: 768px;
     margin: auto;
-    background: var(--cor-cinza-escuro1) url(../assets/img/fundo1.jpg) no-repeat center center;
+    background: var(--cor-cinza-escuro1) url(../assets/img/fundo2.jpg) no-repeat center center;
     background-size: cover;  
 }
 
