@@ -166,18 +166,20 @@ left: 55%;
 }
 
 .texto-hero > button{
-    margin-bottom: 5px;
+   margin-bottom: 5px;
    background-color: var(--cor-laranja-meio);
    border: 0px solid var(--cor-laranja-meio);
    border-radius: 20px;
 }
 
 .texto-hero > a{
+background-color: #0a4e75;
+padding: 2px;
 padding-right: 3px;
 padding-left: 3px;
 border-radius: 20px;
-border: 1px solid var(--cor-azul);
-color: black;
+border: 0px solid var(--cor-azul);
+color: var(--cor-cinza-claro);
 text-decoration: none;
 font-size: 0.7em;
 }
@@ -553,6 +555,16 @@ padding: 2px;
  }
 
  @media screen and (min-width:600px) and (max-width: 768px){
+
+    header{
+     background-image: url("../img/hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center left;
+
+    }
+
+
   #produtos-destaque > div > img{
     width: 190px;
   }
@@ -570,6 +582,15 @@ left: 60.5%;
  }
 
  @media screen and (min-width:768px){
+
+    header{
+     background-image: url("../img/hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center left;
+
+    }
+
    #tela-grande{
     display: block;
    }
@@ -585,7 +606,9 @@ top: 2%;
 left: 68.5%;
 }
 
-
+.img-pequena{
+    width: 190px;
+}
 
  }
 
