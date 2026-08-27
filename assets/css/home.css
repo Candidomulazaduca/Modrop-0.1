@@ -122,6 +122,10 @@ line-height: 25px;
 #icones > a{
     padding: 3px;
 }
+
+#icone-pesquisa.ativo{
+   display: none; 
+}
     
 #pes{
 display: none;
@@ -133,6 +137,7 @@ border: 0px solid black;
 #pes.ativo{
 display: inline-block;
 width: 120px;
+
 }
 
 #fecharpesquisa{
@@ -148,7 +153,7 @@ width: 120px;
 #barradepesquisa{
 position: absolute;
 top: 2%;
-left: 55%;
+left: 60%;
 }
 
 
@@ -319,7 +324,7 @@ transition: all 0.3s ease;
         box-shadow: 0 0 0 rgba(0,170, 255, 0);
         }
         60%{
-            box-shadow: 0 0 30px rgba(0, 170, 255, 0.8);
+            box-shadow: 0 0 30px rgba(0, 140, 255, 0.8);
         }
         100%{
             box-shadow: 0 0 0 rgba(0, 170, 255, 0);
@@ -532,26 +537,6 @@ Grandes telas: acima de 1200px
   left: 52%;
 }
 
-#barradepesquisa{
-position: absolute;
-top: 2%;
-left: 53%;
-}
-
-#pes.ativo{
-display: inline-block;
-width: 100px;
-padding: 2px;
-}
-
-.logo{
-    width: 10px;
-    position: absolute;
-    left: 60px;
-}
-
-
-
  }
 
  @media screen and (min-width:600px) and (max-width: 768px){
@@ -561,9 +546,7 @@ padding: 2px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center left;
-
     }
-
 
   #produtos-destaque > div > img{
     width: 190px;
@@ -576,20 +559,19 @@ padding: 2px;
 #barradepesquisa{
 position: absolute;
 top: 2%;
-left: 60.5%;
+left: 67%;
 }
 
  }
 
  @media screen and (min-width:768px){
 
-    header{
-     background-image: url("../img/hero.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center left;
-
-    }
+header{
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
 
    #tela-grande{
     display: block;
@@ -603,7 +585,7 @@ left: 60.5%;
 #barradepesquisa{
 position: absolute;
 top: 2%;
-left: 68.5%;
+left: 73%;
 }
 
 .img-pequena{

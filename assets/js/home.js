@@ -20,10 +20,11 @@ function abrirpesquisa(){
     var iconepesquisa = document.querySelector('#icone-pesquisa')
     var caixapesquisa = document.getElementById('pes')
     var fecharpesquisa  = document.querySelector('#fecharpesquisa')
+    var iconepesquisa = document.getElementById('icone-pesquisa')
 
     caixapesquisa.classList.toggle("ativo")
     fecharpesquisa.classList.toggle("ativo")
-   
+     iconepesquisa.classList.toggle("ativo")
 }
 
 
